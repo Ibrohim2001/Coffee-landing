@@ -524,7 +524,7 @@ a {
 .testmonial_card_body img {
     margin-right: 24px;
 }
-.testimonial_footer {
+.testimonial_card_footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -540,6 +540,9 @@ a {
     margin-top: 4px;
     color: rgba(255, 255, 255, 0.5);
     font-size: 14px;
+}
+.customer_rating {
+    margin: 1rem 0;
 }
 .customer_rating ul {
     display: flex;
@@ -592,28 +595,25 @@ a {
     top: 72px;
     right: -45px;
 }
-.slide_left {
+.slide_buttons button {
     width: 56px;
     height: 56px;
+    border-radius: 50%;
+    border: none;
+    font-size: 18px;
+}
+.slide_buttons button:hover {
+    cursor: pointer;
+}
+.slide_left {
     margin: 0 8px 0 0;
     color: var(--light-color);
     background-color: var(--fourth-color);
-    border-radius: 50%;
-    border: none;
-    font-size: 18px;
 }
 .slide_right {
-    width: 56px;
-    height: 56px;
     margin: 0 0 0 8px;
     color: var(--fifth-color);
     background-color: var(--third-color);
-    border-radius: 50%;
-    border: none;
-    font-size: 18px;
-}
-.slide_left:hover, .slide_right:hover {
-    cursor: pointer;
 }
 .booking {
     width: 80%;
@@ -624,9 +624,12 @@ a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 652px;
+    place-items: center;
     background-color: var(--first-color);
 }
 .booking_map {
+    width: 70%;
+    margin: 0 auto;
     pointer-events: none;
 }
 .booking_info {
@@ -809,3 +812,382 @@ a {
     margin-left: 5px;
     color: var(--third-color);
 }
+@media only screen and (max-width: 768px) {
+    .main_title {
+        color: var(--light-color);
+        font-family: Righteous;
+        font-size: 52px;
+    }
+    .title {
+        color: var(--light-color);
+        font-family: Righteous;
+        font-size: 38px;
+    }
+    .subtitle {
+        color: var(--third-color);
+        font-family: UrbanistSemiBold;
+        font-size: 18px;
+    }
+    .paragraph {
+        color: var(--light-color);
+        font-family: UrbanistMedium;
+        line-height: 1.4;
+    }
+    .btn {
+        font-size: 16px;
+        padding: 20px 32px;
+    }
+    .wrapper {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        background-color: var(--second-color);
+    }
+    .navigation {
+        flex-direction: column;
+        width: 100%;
+        height: 600px;
+    }
+    .navigation_menu .nav_menu {
+        flex-direction: column;
+    }
+    .showcase {
+        width: 100%;
+        height: auto;
+        margin: 0 auto 40px auto;
+    }
+    .showcase_container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        padding: 50px 10px;
+        text-align: center;
+    }
+    .showcase_video_container {
+        display: none;
+    }
+    .process {
+        width: 100%;
+        height: auto;
+        margin: 20px auto;
+    }
+    .process_container {
+        display: grid;
+        grid-template-columns: 350px;
+        grid-template-rows: repeat(3, 1fr);
+        place-content: center;
+        grid-gap: 36px 0;
+    }
+    .process_title {
+        font-size: 20px;
+    }
+    .our_history {
+        width: 100%;
+        height: auto;
+        margin: 40px auto;
+    }
+    .our_history_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        place-items: center;
+        place-content: center;
+        margin: 1rem auto;
+    }
+    .history_images {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        place-items: center;
+        place-content: center;
+        grid-gap: 1rem 0;
+    }
+    .small_images {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        place-items: center;
+        place-content: center;
+        grid-gap: 1rem 0;
+        width: 100%;
+        height: 100%;
+        margin: 10px auto;
+    }
+    .small_images img {
+        width: 300px;
+        height: 100%;
+    }
+    .small_images img:first-child {
+        margin: 0;
+    }
+    .history_info {
+        width: 300px;
+        margin: 1rem 0;
+        padding: 40px;
+    }
+    .history_info .subtitle {
+        font-size: 16px;
+    }
+    .history_info .title {
+        margin: 10px 0;
+    }
+    .history_info .paragraph {
+        width: 100%;
+        margin: 0;
+        line-height: 1.6;
+    }
+    .popular_products {
+        width: 90%;
+        height: auto;
+        margin: 40px auto;
+    }
+    .prodcut_container {
+        display: grid;
+        grid-template-columns: 366px;
+        grid-template-rows: 1fr;
+        grid-gap: 1rem 0;
+        place-content: center;
+        margin: 36px 0;
+    }
+    .popular_product_heading .title {
+        font-size: 28px;
+    }
+    .product_card {
+        margin: 1rem 0;
+    }
+    .product_card_img {
+        padding: 36px 0;
+    }
+    .product_card_info .title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .product_title {
+        font-size: 20px;
+        margin: 1rem 0;
+    }
+    .cta {
+        width: 85%;
+        height: auto;
+        margin: 40px auto;
+    }
+    .cta_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        place-content: center;
+        place-items: center;
+        padding: 20px 0;
+        text-align: center;
+    }
+    .cta_img {
+        width: 100%;
+        padding-left: 100px;
+    }
+    .cta_info {
+        width: 65%;
+        margin: 0;
+    }
+    .cta_info .title {
+        font-size: 28px;
+        margin-bottom: 36px;
+    }
+    .cta_info .paragraph {
+        line-height: 1.5;
+        margin-bottom: 36px;
+    }
+    .coffee_menu {
+        width: 75%;
+        height: auto;
+        margin: 40px auto;
+    }
+    .coffee_menu_heading {
+        margin-bottom: 36px;
+    }
+    .coffee_menu_heading .title {
+        font-size: 28px;
+    }
+    .coffee_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        place-items: center;
+        place-content: center;
+        grid-gap: 2rem 0;
+    }
+    .coffee_menu_card {
+        padding: 20px;
+    }
+    .coffee_title {
+        font-size: 18px;
+    }
+    .coffee_price {
+        margin-left: 1rem;
+        font-size: 16px;
+    }
+    .testimonial {
+        width: 75%;
+        height: auto;
+        margin: 40px auto;
+    }
+    .testimonial_heading {
+        margin-bottom: 36px;
+    }
+    .testimonial_heading .title {
+        font-size: 28px;
+    }
+    .testimonial_cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        place-content: center;
+        place-items: center;
+        grid-gap: 2rem 0;
+    }
+    .testimonial_card {
+        margin-top: 0;
+        padding: 40px;
+    }
+    .testmonial_card_body {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 28px;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    .testmonial_card_body img {
+        margin-bottom: 1rem;
+    }
+    .testimonial_card_footer {
+        width: 70%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+    .customer_rating ul {
+        margin: 0;
+    }
+    .testimonial_footer {
+        width: 70%;
+        margin: 36px auto;
+        padding: 2rem 0;
+        position: relative;
+    }
+    .customer_info {
+        margin-right: 2rem;
+    }
+    .slide_indicator {
+        top: 2rem;
+    }
+    .number_of_people {
+        font-size: 18px;
+    }
+    .slide_buttons {
+        top: 2rem;
+    }
+    .slide_buttons button {
+        width: 50px;
+        height: 50px;
+        font-size: 16px;
+    }
+    .booking {
+        width: 100%;
+        height: auto;
+        margin: 40px auto;
+    }
+    .booking_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        place-items: center;
+        place-content: center;
+        padding: 2rem 0;
+    }
+    .booking_map {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .booking_map iframe {
+        width: 100%;
+    }
+    .booking_info {
+        width: 70%;
+        padding: 0;
+        text-align: center;
+        margin: 1rem auto;
+    }
+    .booking_info .title {
+        font-size: 28px;
+    }
+    .booking_options {
+        text-align: center;
+    }
+    .booking_options .booking_input,
+    .booking_options input[type=date]  {
+        width: 100%;
+        font-size: 16px;
+    }
+    .latest_news {
+        width: 100%;
+        height: auto;
+        margin: 40px auto;
+    }
+    .latest_news_heading {
+        margin-bottom: 36px;
+    }
+    .latest_news_heading .title {
+        font-size: 28px;
+    }
+    .latest_news_cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 2rem 0;
+        place-items: center;
+        place-content: space-between;
+    }
+    .news_card {
+        width: 70%;
+        margin: 0 auto;
+        background-color: var(--first-color);
+        color: var(--light-color);
+    }
+    .news_body .title {
+        font-size: 18px;
+    }
+    .footer_links {
+        width: 70%;
+        margin: 40px auto;
+        flex-direction: column-reverse;
+    }
+    .footer_subscribe {
+        width: 100%;
+        padding: 0 10px;
+     }
+     .footer_subscribe input[type=email] {
+        width: 90%;
+        padding: 0 10px;
+    }
+    .footer_btn {
+        width: 50px;
+        height: 50px;
+        font-size: 16px;
+        box-shadow: none;
+    }
+
+    .footer_navigation .footer_menu {
+       flex-direction: column;
+       margin: 10px 0;
+    }
+    .footer_menu .footer_item {
+        margin: 10px 0;
+    }
+    .footer_copyRight {
+        height: auto;
+        flex-direction: column;
+    }
+    .footer_copyRight p {
+        margin: 8px 0;
+    }
+  }
